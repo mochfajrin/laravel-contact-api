@@ -59,7 +59,6 @@ class ContactController extends Controller
         }
 
         $data = $request->validated();
-        var_dump($data);
         $contact->fill($data);
         $contact->save();
 
